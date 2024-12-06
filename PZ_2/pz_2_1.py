@@ -6,8 +6,6 @@ def seconds_since_last_hour(N):
     seconds_passed = N % seconds_in_an_hour
 
     return seconds_passed
-
-
 # Пример использования функции
 try:
     N = int(input("Введите количество секунд с начала суток: "))
@@ -18,5 +16,6 @@ try:
     else:
         result = seconds_since_last_hour(N)
         print(f"Количество секунд, прошедших с начала последнего часа: {result}")
+
 except ValueError:
-    print("Пожалуйста, введите целое число.")
+    print("Пожалуйста, введите целое число. Убедитесь, что вы вводите только цифры.")
